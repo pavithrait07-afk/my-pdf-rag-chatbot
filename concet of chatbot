@@ -1,0 +1,38 @@
+My PDF Bot (RAG Chatbot) 🤖📄
+A lightweight Retrieval-Augmented Generation (RAG) pipeline built using Python, LangChain, and FAISS to query and extract precise answers from PDF documents.
+
+🚀 Features
+Automated PDF Ingestion: Dynamically fetches and loads PDF documents.
+
+Smart Text Chunking: Splits large documents into optimized semantic chunks using RecursiveCharacterTextSplitter.
+
+Vector Embeddings: Converts text into numerical vectors using HuggingFace (all-MiniLM-L6-v2).
+
+Fast Similarity Search: Uses FAISS vector database for high-speed context retrieval based on user queries.
+
+🛠️ Tech Stack
+Python
+
+Google Colab
+
+LangChain / LangChain-Text-Splitters
+
+FAISS (Facebook AI Similarity Search)
+
+HuggingFace Transformers
+
+📌 Step-by-Step Implementation Flow
+Environment Setup & Dependencies: Installed required packages (langchain, pypdf, faiss-cpu, sentence-transformers, langchain-text-splitters).
+
+PDF Loading: Loaded the target document into the Python environment using PyPDFLoader.
+
+Text Chunking: Divided the raw text into manageable pieces (chunk_size=500, chunk_overlap=50) to preserve contextual meaning.
+
+Vector Database Creation: Generated vector embeddings and stored them in a local FAISS vector store.
+
+Retrieval & Querying: Executed semantic similarity searches (similarity_search) to pull exact context relevant to user prompts.
+
+📂 Project Structure
+PDF_Bot_Project.ipynb - Complete Google Colab notebook containing the end-to-end RAG pipeline logic.
+
+sample.pdf - Sample document used for testing and querying.
